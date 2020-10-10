@@ -2,9 +2,10 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: pink;
-	background: url(resource/image/bg2.jpg);
+	background: url(https://i.ibb.co/74pN8KK/hannah-morgan-yc-VFts5-Ma4s-unsplash-1.jpg);
 	background-size: cover;
 	font-family: sans-serif;
+	text-align: center;
 }
 .loginbox{
 	width:450px;
