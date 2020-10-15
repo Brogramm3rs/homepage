@@ -28,4 +28,4 @@ function getInfo() {
 		}
 	}
 	console.log("incorrect username or password")
-}
+};
