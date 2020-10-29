@@ -15,17 +15,56 @@
 function getSpringShirt() {
 var shirtImg = new Array("clothes/top/tLightBlue/IMG_4623.jpg", "clothes/top/tPink/IMG_4627.jpg", "clothes/top/tRed/IMG_4625.jpg");
 var randomNum = Math.floor(Math.random() * shirtImg.length);
-document.getElementById("myPicture").src = shirtImg[randomNum];
+document.getElementById("mySpShirt").src = shirtImg[randomNum];
 }
+
+function getSpringBottoms() {
+var bottomImg = new Array("clothes/bottom/bLightBlue/IMG_4630.jpg", "clothes/bottom/bDarkBlue/IMG_4633.jpg", "clothes/bottom/bYellow/IMG_4628.jpg");
+var randomNum = Math.floor(Math.random() * bottomImg.length);
+document.getElementById("mySpBottom").src = bottomImg[randomNum];
+}
+function getSpringShoes() {
+var shoesImg = new Array("clothes/shoes/sWhite/IMG_4637.jpg", "clothes/shoes/sWhite/IMG_4639.jpg");
+var randomNum = Math.floor(Math.random() * shoesImg.length);
+document.getElementById("mySpShoes").src = shoesImg[randomNum];
+}
+
+function getFallShirt() {
+var shirtImg = new Array("clothes/top/tBlack/IMG_4626.jpg", "clothes/top/tDarkGreen/IMG_4624.jpg", "clothes/top/tRed/IMG_4625.jpg");
+var randomNum = Math.floor(Math.random() * shirtImg.length);
+document.getElementById("myFaShirt").src = shirtImg[randomNum];
+}
+
+function getFallBottoms() {
+var bottomImg = new Array("clothes/bottom/bDarkGreen/IMG_4631.jpg", "clothes/bottom/bDarkBlue/IMG_4633.jpg", "clothes/bottom/bBrown/IMG_4632.jpg");
+var randomNum = Math.floor(Math.random() * bottomImg.length);
+document.getElementById("myFaBottom").src = bottomImg[randomNum];
+}
+
+function getFallShoes() {
+var shoesImg = new Array("clothes/shoes/sBrown/IMG_4636.jpg", "clothes/shoes/sDarkGreen/IMG_4634.jpg", "clothes/shoes/sDarkBlue/IMG_4635.jpg");
+var randomNum = Math.floor(Math.random() * shoesImg.length);
+document.getElementById("myFaShoes").src = shoesImg[randomNum];
+}
+
+
+
+
+
+
+
 
 </script>
 
 <body class = "content">
 <p>
-<button onclick= "getSpringShirt()">
+<button onclick= "getSpringShirt();getSpringBottoms();getSpringShoes();">
 <img src = "resource/image/spring.jpg" id="springButton">
 </button>
-  <img src="images/spacer.gif" width="305" height="312" id="myPicture" alt="some image">
+  <img src="images/spacer.gif" width="305" height="312" id="mySpShirt" alt=" ">
+  <img src="images/spacer.gif" width="305" height="312" id="mySpBottom" alt=" ">
+  <img src="images/spacer.gif" width="305" height="312" id="mySpShoes" alt=" ">
+
 </p>
 <p>
 <a href="#">
@@ -33,9 +72,12 @@ document.getElementById("myPicture").src = shirtImg[randomNum];
 </a>
 </p>
 <p>
-<a href="#">
-<img src = "resource/image/fall.jpg"
-</a>
+<button onclick= "getFallShirt();getFallBottoms();getFallShoes();">
+<img src = "resource/image/fall.jpg" id="fallButton">
+</button>
+  <img src="images/spacer.gif" width="305" height="312" id="myFaShirt" alt=" ">
+  <img src="images/spacer.gif" width="305" height="312" id="myFaBottom" alt=" ">
+  <img src="images/spacer.gif" width="305" height="312" id="myFaShoes" alt=" ">
 </p>
 <a href="#">
 <img src = "resource/image/winter.jpg"
