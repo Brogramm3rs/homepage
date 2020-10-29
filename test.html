@@ -11,12 +11,21 @@
 </style>
 <h1>color schemes</h1>
 
+<script>
+function getSpringShirt() {
+var shirtImg = new Array("clothes/top/tLightBlue/IMG_4623.jpg", "clothes/top/tPink/IMG_4627.jpg", "clothes/top/tRed/IMG_4625.jpg");
+var randomNum = Math.floor(Math.random() * shirtImg.length);
+document.getElementById("myPicture").src = shirtImg[randomNum];
+}
+
+</script>
+
 <body class = "content">
 <p>
-<a button onclick= "getSpringShirt()">
+<button onclick= "getSpringShirt()">
 <img src = "resource/image/spring.jpg" id="springButton">
-</a>
-
+</button>
+  <img src="images/spacer.gif" width="305" height="312" id="myPicture" alt="some image">
 </p>
 <p>
 <a href="#">
