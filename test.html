@@ -12,6 +12,7 @@
 <h1>color schemes</h1>
 
 <script>
+//		**SPRING**
 function getSpringShirt() {
 var shirtImg = new Array("clothes/top/tLightBlue/IMG_4623.jpg", "clothes/top/tPink/IMG_4627.jpg", "clothes/top/tRed/IMG_4625.jpg");
 var randomNum = Math.floor(Math.random() * shirtImg.length);
@@ -28,7 +29,25 @@ var shoesImg = new Array("clothes/shoes/sWhite/IMG_4637.jpg", "clothes/shoes/sWh
 var randomNum = Math.floor(Math.random() * shoesImg.length);
 document.getElementById("mySpShoes").src = shoesImg[randomNum];
 }
+//		**SUMMER **
+function getSummerShirt() {
+var shirtImg = new Array("clothes/top/", "clothes/top/", "clothes/top/");
+var randomNum = Math.floor(Math.random() * shirtImg.length);
+document.getElementById("mySuShirt").src = shirtImg[randomNum];
+}
 
+function getSummerBottoms() {
+var bottomImg = new Array("clothes/bottom/", "clothes/bottom/", "clothes/bottom/");
+var randomNum = Math.floor(Math.random() * bottomImg.length);
+document.getElementById("mySuBottom").src = bottomImg[randomNum];
+}
+
+function getSummerShoes() {
+var shoesImg = new Array("clothes/shoes/", "clothes/shoes/");
+var randomNum = Math.floor(Math.random() * shoesImg.length);
+document.getElementById("mySuShoes").src = shoesImg[randomNum];
+}
+//		**FALL**
 function getFallShirt() {
 var shirtImg = new Array("clothes/top/tBlack/IMG_4626.jpg", "clothes/top/tDarkGreen/IMG_4624.jpg", "clothes/top/tRed/IMG_4625.jpg");
 var randomNum = Math.floor(Math.random() * shirtImg.length);
@@ -46,14 +65,25 @@ var shoesImg = new Array("clothes/shoes/sBrown/IMG_4636.jpg", "clothes/shoes/sDa
 var randomNum = Math.floor(Math.random() * shoesImg.length);
 document.getElementById("myFaShoes").src = shoesImg[randomNum];
 }
+//		**WINTER**
 
+function getWinterShirt() {
+var shirtImg = new Array("clothes/top/", "clothes/top/", "clothes/top/");
+var randomNum = Math.floor(Math.random() * shirtImg.length);
+document.getElementById("myWiShirt").src = shirtImg[randomNum];
+}
 
+function getWinterBottoms() {
+var bottomImg = new Array("clothes/bottom/", "clothes/bottom/", "clothes/bottom/");
+var randomNum = Math.floor(Math.random() * bottomImg.length);
+document.getElementById("myWiBottom").src = bottomImg[randomNum];
+}
 
-
-
-
-
-
+function getWinterShoes() {
+var shoesImg = new Array("clothes/shoes/", "clothes/shoes/", "clothes/shoes/");
+var randomNum = Math.floor(Math.random() * shoesImg.length);
+document.getElementById("myWiShoes").src = shoesImg[randomNum];
+}
 </script>
 
 <body class = "content">
@@ -64,13 +94,17 @@ document.getElementById("myFaShoes").src = shoesImg[randomNum];
   <img src="images/spacer.gif" width="305" height="312" id="mySpShirt" alt=" ">
   <img src="images/spacer.gif" width="305" height="312" id="mySpBottom" alt=" ">
   <img src="images/spacer.gif" width="305" height="312" id="mySpShoes" alt=" ">
+</p>
 
-</p>
 <p>
-<a href="#">
-<img src = "resource/image/summer.jpg"
-</a>
+<button onclick= "getSummerShirt();getSummerBottoms();getSummerShoes();">
+<img src = "resource/image/summer.jpg" id="summerButton">
+</button>
+  <img src="images/spacer.gif" width="305" height="312" id="mySuShirt" alt=" ">
+  <img src="images/spacer.gif" width="305" height="312" id="mySuBottom" alt=" ">
+  <img src="images/spacer.gif" width="305" height="312" id="mySuShoes" alt=" ">
 </p>
+
 <p>
 <button onclick= "getFallShirt();getFallBottoms();getFallShoes();">
 <img src = "resource/image/fall.jpg" id="fallButton">
@@ -79,9 +113,13 @@ document.getElementById("myFaShoes").src = shoesImg[randomNum];
   <img src="images/spacer.gif" width="305" height="312" id="myFaBottom" alt=" ">
   <img src="images/spacer.gif" width="305" height="312" id="myFaShoes" alt=" ">
 </p>
-<a href="#">
-<img src = "resource/image/winter.jpg"
-</a>
+
+<button onclick= "getWinterShirt();getWinterBottoms();getWinterShoes();">
+<img src = "resource/image/winter.jpg" id="winterButton">
+  <img src="images/spacer.gif" width="305" height="312" id="myWiShirt" alt=" ">
+  <img src="images/spacer.gif" width="305" height="312" id="myWiBottom" alt=" ">
+  <img src="images/spacer.gif" width="305" height="312" id="myWiShoes" alt=" ">
+</button>
 </p>
 
 
