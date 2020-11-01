@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  height: 100%;
+  position: fixed;
+}
 .ver-list {
       margin-top: -480px;
       position: relative;
@@ -5,8 +10,9 @@
   }
   .list {
       background-color: #00CED1;
-      margin-left: -10px;
+      margin-left: -120px;
       padding-top: 0px;
+      padding-bottom: 90px;
       width: 150px;
 }
   li a {
@@ -27,7 +33,7 @@
     list-style-type: none;
   }
   .about {
-      margin-top: 320px;
+      margin-top: 260px;
       margin-left: 5px;
       padding-bottom: 30px;
       list-style-type: none;
@@ -55,24 +61,20 @@
      margin-left: -20px;
    }
    .fall{
-     color:brown;
-     position: relative;
+     color: #A52A2A	;
      bottom: 0px;
 
    }
    .winter {
-     color:#00008B;
-     position: relative;
+     color: #00008B;
      top: 0px;
    }
    .spring {
-     color:#008000;
-     position: relative;
+     color: #008000;
      top: 0px;
    }
    .summer{
-     color:#FF00FF;
-     position: relative;
+     color: #FF00FF;
      top: 0px;
    }
    .i {
