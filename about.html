@@ -23,9 +23,67 @@
 				width: 400px;
 				height: 250px;
 			}
+			.sidebar {
+			margin-right: 5000px;
+			padding: 0;
+			width: 200px;
+			background-color:   #f6ddcc  ;
+			position: fixed;
+			height: 100%;
+			overflow: auto;
+			text-align: left;
+			}
+
+			/* Sidebar links */
+			.sidebar a {
+			display: block;
+			color: black;
+			padding: 16px;
+			text-decoration: none;
+			}
+
+			/* Active/current link */
+			.sidebar a.active {
+			background-color: #e59866;
+			color: white;
+			}
+
+			/* Links on mouse-over */
+			.sidebar a:hover:not(.active) {
+			background-color: #a04000;
+			color: white;
+			}
+
+			div.content {
+			margin-left: 200px;
+			padding: 1px 16px;
+			height: 1000px;
+			}
+
+			@media screen and (max-width: 700px) {
+			.sidebar {
+			width: 100%;
+			height: auto;
+			position: relative;
+			}
+			.sidebar a {float: left;}
+			div.content {margin-left: 0;}
+			}
+
+			@media screen and (max-width: 400px) {
+			.sidebar a {
+			text-align: center;
+			float: none;
+			}
 		</style>
 	</head>
 	<body>
+	<div class="sidebar">
+		<a class="active" href="index.html">Home</a>
+		<a href="mycloset.html">Manage Closet</a>
+		<a href="test.html">Get An Outfit</a>
+		<a href="about.html">About</a>
+	</div>
 		<center>
 			<img class="image" src ="https://i.imgur.com/YqMhGZI.png" alt="Logo">
 		</center>

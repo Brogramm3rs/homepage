@@ -5,14 +5,79 @@
   <link rel="icon" href="resource/image/elh.png" type="image/png"/>
 </head>
 <style>
-.content {
-  max-width: 500px;
-  margin: auto;
+.maincontent {
+  max-width: 9000px;
+  margin: 0;
   background-color: #dac1a0;
   font-family: sans-serif;
   text-align: center;
+ }  
+.sidebar {
+  margin-right: 5000px;
+  padding: 0;
+  width: 200px;
+  background-color:   #f6ddcc  ;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align: left;
 }
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #e59866;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #a04000;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} 
+
 </style>
+
+<!-- The sidebar -->
+<div class="sidebar">
+  <a class="active" href="index.html">Home</a>
+  <a href="mycloset.html">MyCloset</a>
+  <a href="#contact">Q&A</a>
+  <a href="about.html">About</a>
+</div>
+
+
+
 <h1>color schemes</h1>
 
 <script>
@@ -35,19 +100,19 @@ document.getElementById("mySpShoes").src = shoesImg[randomNum];
 }
 //		**SUMMER **
 function getSummerShirt() {
-var shirtImg = new Array("clothes/top/", "clothes/top/", "clothes/top/");
+var shirtImg = new Array("clothes/top/tYellow/IMG_4792.jpg", "clothes/top/tLightBlue/IMG_4623.jpg", "clothes/top/tLightBlue/IMG_4790.jpg");
 var randomNum = Math.floor(Math.random() * shirtImg.length);
 document.getElementById("mySuShirt").src = shirtImg[randomNum];
 }
 
 function getSummerBottoms() {
-var bottomImg = new Array("clothes/bottom/", "clothes/bottom/", "clothes/bottom/");
+var bottomImg = new Array("clothes/bottom/bRed/IMG_4801.jpg", "clothes/bottom/bBlack/IMG_4800.jpg", "clothes/bottom/bDarkBlue/IMG_4633.jpg");
 var randomNum = Math.floor(Math.random() * bottomImg.length);
 document.getElementById("mySuBottom").src = bottomImg[randomNum];
 }
 
 function getSummerShoes() {
-var shoesImg = new Array("clothes/shoes/", "clothes/shoes/");
+var shoesImg = new Array("clothes/shoes/sWhite/IMG_4639.jpg", "clothes/shoes/");
 var randomNum = Math.floor(Math.random() * shoesImg.length);
 document.getElementById("mySuShoes").src = shoesImg[randomNum];
 }
@@ -72,24 +137,24 @@ document.getElementById("myFaShoes").src = shoesImg[randomNum];
 //		**WINTER**
 
 function getWinterShirt() {
-var shirtImg = new Array("clothes/top/", "clothes/top/", "clothes/top/");
+var shirtImg = new Array("clothes/top/tDarkBlue/IMG_4783.jpg", "clothes/tops/tLightGreen/IMG_4795.jpg", "clothes/tops/tOrange/IMG_4781.jpg");
 var randomNum = Math.floor(Math.random() * shirtImg.length);
 document.getElementById("myWiShirt").src = shirtImg[randomNum];
 }
 
 function getWinterBottoms() {
-var bottomImg = new Array("clothes/bottom/", "clothes/bottom/", "clothes/bottom/");
+var bottomImg = new Array("clothes/bottom/bGrey/IMG_4799.jpg", "clothes/bottom/bDarkBlue/IMG_4633.jpg", "clothes/bottom/");
 var randomNum = Math.floor(Math.random() * bottomImg.length);
 document.getElementById("myWiBottom").src = bottomImg[randomNum];
 }
 
 function getWinterShoes() {
-var shoesImg = new Array("clothes/shoes/", "clothes/shoes/", "clothes/shoes/");
+var shoesImg = new Array("clothes/shoes/sBrown/IMG_4636.jpg", "clothes/shoes/sDarkGreen/IMG_4634.jpg", "clothes/shoes/sDarkBlue/IMG_4635.jpg");
 var randomNum = Math.floor(Math.random() * shoesImg.length);
 document.getElementById("myWiShoes").src = shoesImg[randomNum];
 }
 </script>
-<body class = "content">
+<body class = "maincontent">
   <p>
     <button onclick= "getSpringShirt();getSpringBottoms();getSpringShoes();">
     <img src = "resource/image/spring.jpg" id="springButton">
@@ -119,10 +184,10 @@ document.getElementById("myWiShoes").src = shoesImg[randomNum];
   <p>
     <button onclick= "getWinterShirt();getWinterBottoms();getWinterShoes();">
     <img src = "resource/image/winter.jpg" id="winterButton">
+	  </button>
     <img src="images/spacer.gif" width="305" height="312" id="myWiShirt" alt=" ">
     <img src="images/spacer.gif" width="305" height="312" id="myWiBottom" alt=" ">
     <img src="images/spacer.gif" width="305" height="312" id="myWiShoes" alt=" ">
-  </button>
   </p>
 </body>
 </html>

@@ -1,5 +1,3 @@
-
-
 function getInfo() {
 	
 	var us = document.getElementById("username").value;
