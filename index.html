@@ -5,53 +5,82 @@
 		<meta charset = "utfl-8">
 		<meta name="viewport" content="width=device-width, initial.scale=1.0, minimum-scale=1.0">
 		<title>eyelovehue</title>
-		<link rel="icon" href="resource/image/elh.png" type="image/png"/>
-	  <link rel="stylesheet" href="resource/css/style1.css" type="text/css">
+
 	</head>
-	<body style="background-color: #AFEEEE">
-		<div class="container">
-			<div class="fall">Fall
-				<span class="rect" style="background-color: #A52A2A"></span>
-				<span class="rect" style="background-color: #BC8F8F"></span>
-				<span class="rect" style="background-color: #006400"></span>
-				<span class="rect" style="background-color: #191970"></span>
-				<span class="rect" style="background-color: #800000"></span>
-				<span class="rect" style="background-color: #FFD700"></span>
-			</div><br>
-			<div class="spring">Winter
-				<span class="rect" style="background-color: #87CEEB"></span>
-				<span class="rect" style="background-color: #DA70D6"></span>
-				<span class="rect" style="background-color: #008080"></span>
-				<span class="rect" style="background-color: #4B0082"></span>
-				<span class="rect" style="background-color: #8B4513"></span>
-				<span class="rect" style="background-color: #0000CD"></span>
-			</div><br>
-			<div class='summer'>Spring
-				<span class="rect" style="background-color: #00bfff"></span>
-				<span class="rect" style="background-color: #DA70D6"></span>
-				<span class="rect" style="background-color: #FFFACD"></span>
-				<span class="rect" style="background-color: #FFA07A"></span>
-				<span class="rect" style="background-color: #98FB98"></span>
-				<span class="rect" style="background-color: #FF4500"></span>
-			</div><br>
-			<div class="winter">Summer
-				<span class="rect" style="background-color: #FFFF00"></span>
-				<span class="rect" style="background-color: #00FFFF"></span>
-				<span class="rect" style="background-color: #6495ED"></span>
-				<span class="rect" style="background-color: #7FFFD4"></span>
-				<span class="rect" style="background-color: #ff3333"></span>
-				<span class="rect" style="background-color: #FF00FF"></span>
-			</div>
-	  <!--Vertical navigation bar-->
-		<nav class="ver-list">
-	 		<ul class="list">
-		    <a href="#"><img src="resource/image/elhweb.png" alt="eyelovehue icon" width="150px" height="100px"/></a>
-			  <li class="link"><a href="mycloset.html">My Closet</a></li>
-			  <li class="link"><a href="#">Outfits</a></li>
-	  		<li class="link"><a href="test.html">Color Schemes</a></li>
-	  		<li class="about"><a href="about.html" >About</a></li>
-	 		</ul>
-		</nav>
+<body class="maincontent">
+<style>
+.maincontent {
+  max-width: 10000px;
+  margin-top: 20px;
+
+  background-color: #dac1a0;
+  font-family: sans-serif;
+  text-align: center;
+ }  
+.sidebar {
+  margin-right: 0px
+  padding: 0;
+  width: 200px;
+  background-color:   #f6ddcc  ;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align: left;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #e59866;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #a04000;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} 
+
+</style>
+	<div class="sidebar">
+  <a href="index.html"> <img width="170" height="110" src ="resource/image/elhweb.png"> </a>
+  <a href="index.html">Home</a>
+  <a href="mycloset.html">Manage Closet</a>
+  <a href="#contact">Get An Outfit</a>
+  <a href="about.html">About</a>
+  <a href="login.html">Log Out</a>
+</div>
+
 		<footer></footer>
 	</body>
 </html>

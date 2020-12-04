@@ -17,7 +17,7 @@ function getInfo() {
 
     if (valid != -1) {
         document.getElementById("password").value = pwArray[valid];
-		location.href = 'index.html';
+		window.location.replace = ("index.html");
 		
     }
     else {
