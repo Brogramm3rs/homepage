@@ -22,6 +22,7 @@
   height: 100%;
   overflow: auto;
   text-align: left;
+  opacity: 0.9;
 }
 
 /* Sidebar links */
@@ -49,6 +50,10 @@ div.content {
   padding: 1px 16px;
   height: 1000px;
 }
+.bottom {
+    bottom: 0;
+	text-align: center;
+}
 
 @media screen and (max-width: 700px) {
   .sidebar {
@@ -68,7 +73,7 @@ div.content {
 } 
 </style>
   <link href="resource/css/style.css" rel="stylesheet" type="text/css">
-  	
+
 <div class="sidebar">
   <a href="test.html"> <img width="170" height="110" src ="resource/image/elhweb.png"> </a>
   <a href="test.html">Home</a>
@@ -76,7 +81,8 @@ div.content {
   <a href="about.html">About</a>
   		<a href="login.html">Log Out</a>
 </div>
-  <div class="loginbox">
+  <div class="closetbox">
+  
     <p><b> Upload image </b></p>
     <label for="clothes">Select type: </label>
     <select name="clothes" id="clothes">

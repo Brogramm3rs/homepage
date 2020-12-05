@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>eyelovehue - Test Page</title>
+  <title>eyelovehue - Home Page</title>
   <link rel="icon" href="resource/image/elh.png" type="image/png"/>
 </head>
 <style>
@@ -13,9 +13,19 @@
   background-size: cover;
   font-family: sans-serif;
   text-align: center;
- }  
+ } 
+
+.button {
+padding: 0;
+border: none;
+background: none;
+} 
+.bottom {
+    bottom: 0;
+	text-align: center;
+}
 .sidebar {
-  margin-right: 30px
+  margin-bottom: 30px;
   padding: 0;
   width: 200px;
   background-color:   #ABD6CE;
@@ -81,8 +91,9 @@ div.content {
 </div>
 
 
-
-<h1>color schemes</h1>
+<p>
+<h1 class ="h1">color schemes</h1>
+</p>
 
 <script>
 //		**SPRING**
@@ -160,7 +171,7 @@ document.getElementById("myWiShoes").src = shoesImg[randomNum];
 </script>
 <body class = "maincontent">
   <p>
-    <button onclick= "getSpringShirt();getSpringBottoms();getSpringShoes();">
+    <button class = "button" onclick= "getSpringShirt();getSpringBottoms();getSpringShoes();">
     <img src = "resource/image/spring.jpg" id="springButton">
     </button>
     <img src="images/spacer.gif" width="305" height="312" id="mySpShirt" alt=" ">
@@ -169,7 +180,7 @@ document.getElementById("myWiShoes").src = shoesImg[randomNum];
   </p>
 
   <p>
-    <button onclick= "getSummerShirt();getSummerBottoms();getSummerShoes();">
+    <button class = "button" onclick= "getSummerShirt();getSummerBottoms();getSummerShoes();">
     <img src = "resource/image/summer.jpg" id="summerButton">
     </button>
     <img src="images/spacer.gif" width="305" height="312" id="mySuShirt" alt=" ">
@@ -178,7 +189,7 @@ document.getElementById("myWiShoes").src = shoesImg[randomNum];
   </p>
 
   <p>
-    <button onclick= "getFallShirt();getFallBottoms();getFallShoes();">
+    <button class = "button" onclick= "getFallShirt();getFallBottoms();getFallShoes();">
     <img src = "resource/image/fall.jpg" id="fallButton">
     </button>
     <img src="images/spacer.gif" width="305" height="312" id="myFaShirt" alt=" ">
@@ -186,12 +197,14 @@ document.getElementById("myWiShoes").src = shoesImg[randomNum];
     <img src="images/spacer.gif" width="305" height="312" id="myFaShoes" alt=" ">
   </p>
   <p>
-    <button onclick= "getWinterShirt();getWinterBottoms();getWinterShoes();">
+    <button class = "button" onclick= "getWinterShirt();getWinterBottoms();getWinterShoes();">
     <img src = "resource/image/winter.jpg" id="winterButton">
 	  </button>
     <img src="images/spacer.gif" width="305" height="312" id="myWiShirt" alt=" ">
     <img src="images/spacer.gif" width="305" height="312" id="myWiBottom" alt=" ">
     <img src="images/spacer.gif" width="305" height="312" id="myWiShoes" alt=" ">
+	<p  class = " bottom">
+	© 2020, eyelovehue, Inc. or its affiliates <p>
   </p>
 </body>
 </html>
