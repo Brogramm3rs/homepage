@@ -22,6 +22,11 @@ body {
 	opacity: 0.9;
 	border-radius: 10px;
 }
+.copyright{
+	color: #dac1a0;
+	font-size: 11px;
+
+}	
 .loginbox{
 	width:450px;
 	height:600px;
